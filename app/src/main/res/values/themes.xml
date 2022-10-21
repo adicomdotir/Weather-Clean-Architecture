@@ -13,4 +13,23 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="Theme.WeatherCleanArchitecture.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/sunny</item>
+        <item name="windowSplashScreenAnimationDuration">200</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_rweather_icon</item>
+        <item name="postSplashScreenTheme">@style/Theme.WeatherCleanArchitecture.NoActionBar</item>
+    </style>
+
+    <style name="Theme.WeatherCleanArchitecture.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.WeatherCleanArchitecture.bg">
+        <item name="android:background">@color/sunny</item>
+    </style>
+
+    <style name="Theme.RWeather.CustomCardview" parent="CardView">
+        <item name="cardBackgroundColor">@color/cardSunny</item>
+    </style>
 </resources>
