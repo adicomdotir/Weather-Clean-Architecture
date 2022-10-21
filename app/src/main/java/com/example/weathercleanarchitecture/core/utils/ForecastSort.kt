@@ -1,4 +1,4 @@
-package com.rad.rweather.core.utils
+package com.example.weathercleanarchitecture.core.utils
 
 import com.example.weathercleanarchitecture.core.domain.model.forecast.ListForecast
 

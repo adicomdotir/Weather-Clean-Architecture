@@ -9,7 +9,7 @@ import com.example.weathercleanarchitecture.core.domain.model.forecast.ListForec
 import com.example.weathercleanarchitecture.core.utils.DateFormatter.getDay
 import com.example.weathercleanarchitecture.core.utils.getLottieSrc
 import com.example.weathercleanarchitecture.databinding.DailyForecastRowBinding
-import com.rad.rweather.core.utils.ForecastSort
+import com.example.weathercleanarchitecture.core.utils.ForecastSort
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
