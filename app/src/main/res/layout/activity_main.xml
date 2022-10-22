@@ -1,125 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/tvTitle"
+    <data>
+
+    </data>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:gravity="center"
-        android:text="@string/title"
-        android:textColor="#004D40"
-        android:textSize="23sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0" />
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".presentation.MainActivity">
 
-    <RadioGroup
-        android:id="@+id/radioBtnForCity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="275dp"
-        app:srcCompat="@drawable/image_rain_mwt" />
-
-    <TextView
-        android:id="@+id/tvTemperature"
-        style="@style/TextAppearance.AppCompat.Medium"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center" />
-
-    <TextView
-        android:id="@+id/tvTemp_min"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center" />
-
-    <TextView
-        android:id="@+id/tvTemp_max"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center" />
-
-    <TextView
-        android:id="@+id/tvPressure"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center" />
-
-    <TextView
-        android:id="@+id/tvHumidity"
-        android:layout_width="300dp"
-        android:layout_height="26dp"
-        android:layout_gravity="center" />
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="145dp">
-
-        <RadioButton
-            android:id="@+id/select_moscow"
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@android:dimen/app_icon_size"
-            android:onClick="onRadioButtonClicked"
-            android:text="@string/moscow1"
-            android:textSize="16sp" />
+            android:id="@+id/dataTextView"
+            android:layout_marginTop="20dp"
+            android:text="No data" />
 
-        <RadioButton
-            android:id="@+id/select_sochi"
+        <Button
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@android:dimen/app_icon_size"
-            android:onClick="onRadioButtonClicked"
-            android:text="@string/sochi1"
-            android:textSize="16sp" />
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/receiveButton"
+            android:text="Get user data" />
 
-        <RadioButton
-            android:id="@+id/select_samara"
+        <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@android:dimen/app_icon_size"
-            android:onClick="onRadioButtonClicked"
-            android:text="@string/samara1"
-            android:textSize="16sp" />
+            android:layout_height="50dp"
+            android:id="@+id/dataEditText"
+            android:layout_marginTop="50dp"
+            android:hint="Put dara here" />
 
-    </RadioGroup>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/sendButton"
+            android:text="Save user naem" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/tvChooseTheCity"
-        android:gravity="center"/>
-
-    <TextView
-        android:id="@+id/textView"
-        style="@style/TextAppearance.AppCompat.Medium"
-        android:layout_width="match_parent"
-        android:layout_height="61dp"
-        android:gravity="bottom|center"
-        android:text="@string/info_about_wind"
-        android:textColor="#004D40" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabWeatherFetch"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:clickable="true"
-        app:rippleColor="#73A59D"
-        app:srcCompat="@drawable/ic_baseline_arrow_forward_24" />
-
-</androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+</layout>
